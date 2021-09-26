@@ -14,7 +14,8 @@ SuperPlayer-Samplerate
         │   └── init.d
         │       └── squeezelite-cdsp
         └── tce.installed
-            └── SuperPlayer-Samplerate ```\
+            └── SuperPlayer-Samplerate 
+```
 
 Bla... Bla...\
 
