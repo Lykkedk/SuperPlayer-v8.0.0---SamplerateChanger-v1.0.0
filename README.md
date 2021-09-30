@@ -4,7 +4,7 @@
 SuperPlayer-Samplerate with .py (python) executed samplerate changer\
 Changes the samplerates without stopping & starting CamillaGUI
 ```
-SuperPlayer-Samplerate
+SuperPlayer-Samplerate-v8.0.0
 ├── home
 │   └── tc
 │       └── camilladsp
