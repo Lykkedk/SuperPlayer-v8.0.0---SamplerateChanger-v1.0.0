@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [ $1 = "alsa_cdsp" ]; then
+    echo "Starting ----> SuperPlayer-Samplerate with native alsa_cdsp samplerate changer"
+    sudo /usr/local/etc/init.d/squeezelite-cdsp stop
+    sudo /usr/local/etc/init.d/squeezelite stop
+    sudo rm /var/run/squeezelite.pid
+    sudo killall squeezelite
+    sudo killall camilladsp
+    sudo /usr/local/etc/init.d/squeezelite start
+fi
+if [ $1 = "py_cdsp" ]; then
+    echo "Starting ----> SuperPlayer-Samplerate with python executed samplerate changer"
+    sudo /usr/local/etc/init.d/squeezelite stop
+    sudo /usr/local/etc/init.d/squeezelite-cdsp stop
+    sudo rm /var/run/squeezelite.pid
+    sudo killall squeezelite
+    sudo killall camilladsp
+    sudo /usr/local/etc/init.d/squeezelite-cdsp start
+fi
+
+exit
