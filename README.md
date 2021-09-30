@@ -17,7 +17,7 @@ SuperPlayer-Samplerate-v8.0.0
         │   └── init.d
         │       └── squeezelite-cdsp
         └── tce.installed
-            └── SuperPlayer-Samplerate 
+            └── SuperPlayer-Samplerate-v8.0.0 
 ```
 SuperPlayer-Samplerate with alsa_cdsp plugin execute samplerate change with native alsa plugin\
 Change the samplerate makes CamillaGUI stop & start
