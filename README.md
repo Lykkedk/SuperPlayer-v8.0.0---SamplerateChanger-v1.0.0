@@ -36,6 +36,13 @@ superplayer-alsa_cdsp-v8.0.0
         └── tce.installed
             └── superplayer-alsa_cdsp-v8.0.0
 ```
-
+SuperPlayer-GameChanger is (sorry for the lame name) the script which is used to choose the way of doing the samplerate change in CamillaDSP 
+```
+SuperPlayer-GameChanger
+└── usr
+    └── local
+        └── bin
+            └── SuperPlayer-GameChanger
+```
 
 
