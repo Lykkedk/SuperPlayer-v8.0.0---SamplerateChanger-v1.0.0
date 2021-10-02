@@ -1,6 +1,18 @@
 # SuperPlayer-v8.0.0-----SamplerateChanger-v1.0.0
 **Currently under construction**
 
+```
+tce-load -w git
+tce-load -i git
+git clone https://github.com/Lykkedk/SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0.git
+cd SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
+cp *.tcz /mnt/mmcblk0p2/tce/optional
+cp *.tcz.dep /mnt/mmcblk0p2/tce/optional
+cd ..
+rm -fr SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
+
+```
+
 SuperPlayer-Samplerate with .py (python) executed samplerate changer\
 Changes the samplerates without stopping & starting CamillaGUI
 ```
