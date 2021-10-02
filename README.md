@@ -72,6 +72,7 @@ echo "${GREEN}Running bootlocal.sh..."
 
 # SuperPlayer ------
 sudo SuperPlayer-GameChanger py-cdsp > /dev/null 2>&1
+#sudo SuperPlayer-GameChanger alsa-cdsp > /dev/null 2>&1
 camillagui  > /dev/null 2>&1 &
 # SuperPlayer ------
 ```
