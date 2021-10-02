@@ -99,6 +99,6 @@ SuperPlayer-Samplerate with python executed samplerate changer
 
 ```
 
-![SuperPlayer-settings Logo](/SuperPlayer.png)
+![SuperPlayer-settings Logo](/Squeezelite_settings.png)
 
-![SuperPlayer-tweaks Logo](/SuperPlayer.png)
+![SuperPlayer-tweaks Logo](/Squeezelite_tweaks.png)
