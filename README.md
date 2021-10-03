@@ -57,6 +57,34 @@ SuperPlayer-GameChanger
             └── SuperPlayer-GameChanger
 ```
 
+Take a backup of the pCP asound.conf :
+```sudo cp /etc/asound.conf /home/tc/asound.conf-pCP```
+Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new empty one ```sudo nano /etc/asound.conf```
+The SuperPlayer /etc/asound.conf should look like this:
+```
+#    --- sound_out is the real hardware card ---
+#    --- SuperPlayer default ---
+pcm.sound_out {
+type hw
+card 0
+device 0
+}
+
+ctl.sound_out {
+type hw
+card 0
+}
+```
+But change the card 0/device 0 to the actual hardware, if it's not right.
+The cards can be seen by execute ```aplay -l```
+```
+**** List of PLAYBACK Hardware Devices ****
+card 0: Amanero [Combo384 Amanero], device 0: USB Audio [USB Audio]
+  Subdevices: 0/1
+  Subdevice #0: subdevice #0
+```
+
+
 ```cat /opt/bootlocal.sh```
 ```
 #!/bin/sh
