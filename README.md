@@ -58,8 +58,8 @@ SuperPlayer-GameChanger
 ```
 
 Take a backup of the pCP asound.conf :
-```sudo cp /etc/asound.conf /home/tc/asound.conf-pCP```
-Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new empty one ```sudo nano /etc/asound.conf```
+```sudo cp /etc/asound.conf /home/tc/asound.conf-pCP```\
+Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new empty one ```sudo nano /etc/asound.conf```\
 The SuperPlayer /etc/asound.conf should look like this:
 ```
 #    --- sound_out is the real hardware card ---
