@@ -203,7 +203,10 @@ The two line's ::
   chunksize: <<chunk_size>>
 ```
 Are automatically changed to the played samplerate with a prober chunksize, really close to the way the native alsa_cdsp plugin work's.\
-When the python daemon are started, it generates a new file named ```cdsp_template_active.yml```, which are the one CamillaDSP will use.
+When the python daemon are started, it generates a new file named ```cdsp_template_active.yml```, which are the one CamillaDSP will use.\
+Using e.g fir filter's in the .yml - just name the filter's with this <<sample_rate>> ... Say /home/tc/myfilter/MYFIR<<sample_rate>>FOO.yml\
+Or again most like the same way when using the native alsa_cdsp. https://github.com/scripple/alsa_cdsp
+
 
 ```nano /opt/bootlocal.sh```
 ```
