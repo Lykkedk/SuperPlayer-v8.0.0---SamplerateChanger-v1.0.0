@@ -2,13 +2,13 @@
 **Currently under construction**
 **Tested on pCP 8, 32bit version**
 
-**So i was entitled to make a quick writeup on howto use this stuff**
-
-So it all started a "long" time ago ;-)... \
+It all started a "long" time ago ;-)... (Not in a far away galaxy through)\
 I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
 
-I created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
+I had created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
 The goal with this is to have CamillaDSP running along with Squeezelite and automatically change filters on CamillaDSP, when samplerate's are changing.
+
+If you like to have the CamillaDSP gui installed, giving you a nice interface, you should install my .tcz'z from here https://github.com/Lykkedk/SuperPlayer-v8.0.0--CamillaGUI-v0.6.0 also.
 
 ```
 tce-load -w git
