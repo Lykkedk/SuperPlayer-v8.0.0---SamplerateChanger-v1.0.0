@@ -17,9 +17,9 @@ If you like to have the CamillaDSP gui installed also, giving you a nice interfa
 
 (Nevermind is something is repeated from my Camillagui install, if you did this first)
 
-First thing to do, is to have the pCP working with your'e soundcard/dac or whatever used; when this is done continue...
-
 Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePlayer8.0.0/piCorePlayer8.0.0.zip\
+**First thing to do, is to have the pCP working** with your'e soundcard/dac or whatever used; when this is done continue...
+
 Extend filesystem as instructed for piCorePlayer. [Main page, Resize FS]
 
 **SSH into the pCP/RPI ssh tc@192.168.1.95 (with the right ip number)**
@@ -46,8 +46,10 @@ rm -fr SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
 
 ```
 
+
+
 SuperPlayer-Samplerate with .py (python) executed samplerate changer\
-Changes the samplerates without stopping & starting CamillaGUI
+Changes the samplerates with Python daemon's and script's (Thanks to user "pi r" frome diyaudio.com for this solution)
 ```
 SuperPlayer-Samplerate-v8.0.0
 ├── home
@@ -65,7 +67,7 @@ SuperPlayer-Samplerate-v8.0.0
             └── SuperPlayer-Samplerate-v8.0.0 
 ```
 SuperPlayer-Samplerate with alsa_cdsp plugin execute samplerate change with native alsa plugin\
-Change the samplerate makes CamillaGUI stop & start
+Change the samplerate with the "native" solution https://github.com/scripple/alsa_cdsp
 ```
 superplayer-alsa_cdsp-v8.0.0
 ├── home
@@ -134,7 +136,7 @@ echo "${GREEN}Running bootlocal.sh..."
 # SuperPlayer ------
 sudo SuperPlayer-GameChanger py-cdsp > /dev/null 2>&1
 #sudo SuperPlayer-GameChanger alsa-cdsp > /dev/null 2>&1
-camillagui  > /dev/null 2>&1 &
+camillagui  > /dev/null 2>&1 &   ```**<---- REMOVE if not used**```
 # SuperPlayer ------
 ```
 
