@@ -23,13 +23,13 @@ Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePla
 
 Extend filesystem as instructed for piCorePlayer. [Main page, Resize FS]
 
-**SSH into the pCP/RPI ssh tc@192.168.1.95 (with the right ip number)**
-Default password is: piCore
+SSH into the pCP/RPI ssh tc@192.168.1.95 (with the right ip number)\
+Default password is: piCore\
 Install needed editor:
 
 ```tce-load -w -i nano``` (RPI downloads and installs nano now)
 
-Nano is an easy texteditor
+Nano is an easy texteditor\
 Quick use : [ctrl] + o = save, [ctrl] + x = exit
 
 Install python3.8.tcz - ```tce-load -w -i python3.8.tcz```
