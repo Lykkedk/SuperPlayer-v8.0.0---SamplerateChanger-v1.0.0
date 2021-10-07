@@ -260,7 +260,8 @@ I use this method myself, but honestly i think most people prefer the native way
 
 When you are ready and everything is working, **try the alsa_cdsp method also**, and choose for yourself what you like best!\
 When you load, either by onboot.lst or by ```tce-load -i superplayer-alsa_cdsp-v8.0.0.tcz```, the asound.conf are modified\
-and it might be necessary to edit it to youre card, soundcard, dac etc... again, just like we did at the beginning.
+and it might be necessary to edit it to youre card, soundcard, dac etc... again, just like we did at the beginning.\
+The **squeezelite output must be set to camilladsp** for native alsa method (look at pictures) - at the pCP webinterface.
 
 ```cat /etc/asound.conf```
 ```
@@ -317,8 +318,9 @@ camilladsp
             └── asound.conf-BACKUP
 ```
 
-Hope it all went good.... \
-**Good luck (Jesper / lykkedk over at diyaudio.com)**
+Hope it all went good.... 
+
+# Good luck (Jesper / lykkedk over at diyaudio.com)
 
 Some examples of use ::
 ```
