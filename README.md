@@ -1,5 +1,14 @@
 # SuperPlayer-v8.0.0-----SamplerateChanger-v1.0.0
 **Currently under construction**
+**Tested on pCP 8, 32bit version**
+
+**So i was entitled to make a quick writeup on howto use this stuff**
+
+So it all started a "long" time ago ;-)... \
+I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
+
+I created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
+The goal with this is to have CamillaDSP running along with Squeezelite and automatically change filters on CamillaDSP, when samplerate's are changing.
 
 ```
 tce-load -w git
