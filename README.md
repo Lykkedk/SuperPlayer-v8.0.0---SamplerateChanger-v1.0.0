@@ -255,9 +255,56 @@ superplayer-samplerate-v8.0.0.tcz
 superplayer-alsa_cdsp-v8.0.0.tcz
 SuperPlayer-GameChanger.tcz
 ```
+You can (#) Comment out the line ```superplayer-alsa_cdsp-v8.0.0.tcz``` if you like the way it's working with the Python daemon & script's.\
+I use this method myself, but honestly i think most people prefer the native way.
 
-```sudo SuperPlayer-GameChanger py-cdsp``` or ```sudo SuperPlayer-GameChanger alsa-cdsp```
+When you are ready and everything is working, **try the alsa_cdsp method also**, and choose for yourself what you like best!\
+When you load, either by onboot.lst or by ```tce-load -i superplayer-alsa_cdsp-v8.0.0.tcz```, the asound.conf are modified\
+and it might be necessary to edit it to youre card, soundcard, dac etc... again, just like we did at the beginning.
 
+```cat /etc/asound.conf```
+```
+#    --- sound_out is the real hardware card ---
+#    --- SuperPlayer default ---
+pcm.sound_out {
+type hw
+card 0
+device 0
+}
+
+ctl.sound_out {
+type hw
+card 0
+}
+
+#   --- CamillaDSP with Seashell's alsa-plugin ---
+# Howto here : https://github.com/scripple/alsa_cdsp 
+pcm.camilladsp {
+    type cdsp
+      cpath "/usr/local/bin/camilladsp"
+      config_in "/home/tc/camilladsp/alsa_cdsp_template.yml"
+      config_out "/home/tc/camilladsp/camilladsp.yml"
+      cargs [
+        -l warn
+        -p "1234"
+      ]
+      channels 2
+      rates = [
+        44100 
+        48000 
+        88200 
+        96000
+        176400
+        192000
+        352800
+        384000
+      ]
+}
+```
+If this also work's, you can have it load at boot, by inserting it into bootlocal & onboot.lst as i explained before.
+
+
+Some examples of use ::
 ```
 sudo SuperPlayer-GameChanger alsa-cdsp
 Starting ----> SuperPlayer-Samplerate with native alsa_cdsp samplerate changer
@@ -277,6 +324,8 @@ sudo SuperPlayer-GameChanger status
 SuperPlayer-Samplerate with python executed samplerate changer
 
 ```
+
+Hope it all went good.... Good luck (Jesper / lykkedk over at diyaudio.com)
 
 ![SuperPlayer-settings Logo](/Squeezelite_settings.png)
 
