@@ -96,7 +96,7 @@ SuperPlayer-GameChanger
         └── bin
             └── SuperPlayer-GameChanger
 ```
-While the .tcz's are looking for the folder and files (/home/tc/camilladsp/etc... etc..), there is ofcause a chance that something\
+While the .tcz's are looking for the folder and files to prevent overwriting (/home/tc/camilladsp/etc... etc..), there is ofcause a chance that something\
 could go wrong, so please backup thoose dir's if you have them.
 
 Also take a backup of the pCP asound.conf - Nice to have for troubleshooting :
@@ -139,7 +139,71 @@ If not allready there, the .tcz should create the following directory's and file
                   ├── configs
 
 ```
+The cdsp_template.yml is the file we must edit to our need's (filter's, EQ's, gain, volume etc...)\
+The file could look like this ::
+```
+devices:
+  samplerate: <<sample_rate>>
+  chunksize: <<chunk_size>>
+  queuelimit: 1
+  capture:
+    type: File
+    channels: 2
+    filename: "/dev/stdin"
+    format: S32LE
+  playback:
+    type: ALSA
+    channels: 2
+    device: "sound_out"
+    format: S32LE
+filters:
+  Gain_L:
+    parameters:
+      gain: 0
+      inverted: false
+      mute: false
+    type: Gain
+  Gain_R:
+    parameters:
+      gain: 0
+      inverted: false
+      mute: false
+    type: Gain
+  Volume_L:
+    parameters:
+      ramp_time: 200
+    type: Volume
+  Volume_R:
+    parameters:
+      ramp_time: 200
+    type: Volume
+mixers: {}
+pipeline:
+- channel: 0
+  names:
+  - Gain_L
+  type: Filter
+- channel: 1
+  names:
+  - Gain_R
+  type: Filter
+- channel: 0
+  names:
+  - Volume_L
+  type: Filter
+- channel: 1
+  names:
+  - Volume_R
+  type: Filter
 
+```
+The two line's ::
+```
+  samplerate: <<sample_rate>>
+  chunksize: <<chunk_size>>
+```
+Are automatically changed to the played samplerate with a prober chunksize, really close to the way the native alsa_cdsp plugin work's.\
+When the python daemon are started, it generates a new file named ```cdsp_template_active.yml```, which are the one CamillaDSP will use.
 
 ```nano /opt/bootlocal.sh```
 ```
