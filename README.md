@@ -96,13 +96,15 @@ SuperPlayer-GameChanger
         └── bin
             └── SuperPlayer-GameChanger
 ```
-While the .tcz's are looking for the folder and files (/home/tc/camilladsp/etc... etc..), there is ofcause a chance that something could go wrong, so please\
-backup thoose dir's if you have them.
+While the .tcz's are looking for the folder and files (/home/tc/camilladsp/etc... etc..), there is ofcause a chance that something\
+could go wrong, so please backup thoose dir's if you have them.
 
 Also take a backup of the pCP asound.conf - Nice to have for troubleshooting :
 ```sudo cp /etc/asound.conf /home/tc/asound.conf-pCP```\
-Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new empty one ```sudo nano /etc/asound.conf```\
-The SuperPlayer /etc/asound.conf should look like this:
+Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new one ```sudo nano /etc/asound.conf```\
+and copy/paste the underneeth into it.
+
+(SuperPlayer /etc/asound.conf)
 ```
 #    --- sound_out is the real hardware card ---
 #    --- SuperPlayer default ---
@@ -126,6 +128,17 @@ card 0: Amanero [Combo384 Amanero], device 0: USB Audio [USB Audio]
   Subdevice #0: subdevice #0
 ```
 
+Everything should be ready now to try the Python way of doing this (py-cdsp).\
+Execute ```tce-load -i superplayer-samplerate-v8.0.0.tcz```\
+If not allready there, the .tcz should create the following directory's and files ::
+```
+/home/tc/camilladsp
+                  ├── cdsp_template.yml
+                  ├── cdsp_template_active.yml
+                  ├── coeffs
+                  ├── configs
+
+```
 
 
 ```nano /opt/bootlocal.sh```
