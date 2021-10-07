@@ -17,7 +17,8 @@ If you like to have the CamillaDSP gui installed also, giving you a nice interfa
 
 (Nevermind is something is repeated from my Camillagui install, if you did this first)
 
-Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePlayer8.0.0/piCorePlayer8.0.0.zip\
+Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePlayer8.0.0/piCorePlayer8.0.0.zip
+
 **First thing to do, is to have the pCP working** with your'e soundcard/dac or whatever used; when this is done continue...
 
 Extend filesystem as instructed for piCorePlayer. [Main page, Resize FS]
