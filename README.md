@@ -25,8 +25,8 @@ Extend filesystem as instructed for piCorePlayer. [Main page, Resize FS]
 
 SSH into the pCP/RPI ssh tc@192.168.1.95 (with the right ip number)\
 Default password is: piCore\
-Install needed editor:
 
+Install needed editor:\
 ```tce-load -w -i nano``` (RPI downloads and installs nano now)
 
 Nano is an easy texteditor\
@@ -34,7 +34,8 @@ Quick use : [ctrl] + o = save, [ctrl] + x = exit
 
 Install python3.8.tcz - ```tce-load -w -i python3.8.tcz```
 
-Install git & clone my repo. (You can copy & paste, one line at a time into the pCP SSH console/terminal if you like)
+Install git & clone my repo. + copy the files into the right location on the pCP\
+(You can copy & paste, one line at a time into the pCP SSH console/terminal if you like)
 ```
 tce-load -w git
 tce-load -i git
@@ -46,9 +47,9 @@ cd ..
 rm -fr SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
 
 ```
+**The structure of the .tcz's are like this ::**
 
-
-
+[SuperPlayer-Samplerate-v8.0.0.tcz]\
 SuperPlayer-Samplerate with .py (python) executed samplerate changer\
 Changes the samplerates with Python daemon's and script's (Thanks to user "pi r" frome diyaudio.com for this solution)
 ```
@@ -67,6 +68,8 @@ SuperPlayer-Samplerate-v8.0.0
         └── tce.installed
             └── SuperPlayer-Samplerate-v8.0.0 
 ```
+
+[superplayer-alsa_cdsp-v8.0.0]\
 SuperPlayer-Samplerate with alsa_cdsp plugin execute samplerate change with native alsa plugin\
 Change the samplerate with the "native" solution https://github.com/scripple/alsa_cdsp
 ```
