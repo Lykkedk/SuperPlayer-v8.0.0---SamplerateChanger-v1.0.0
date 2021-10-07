@@ -320,7 +320,7 @@ camilladsp
 
 Hope it all went good.... 
 
-# Good luck (Jesper / lykkedk over at diyaudio.com)
+**Good luck (Jesper / lykkedk over at diyaudio.com)**
 
 Some examples of use ::
 ```
