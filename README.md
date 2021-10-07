@@ -87,7 +87,8 @@ superplayer-alsa_cdsp-v8.0.0
         └── tce.installed
             └── superplayer-alsa_cdsp-v8.0.0
 ```
-SuperPlayer-GameChanger is (sorry for the lame name) the script which is used to choose the way of doing the samplerate change in CamillaDSP 
+[SuperPlayer-GameChanger.tcz]
+SuperPlayer-GameChanger is (sorry for the lame name) the script which is used to choose between them (alsa-cdsp native way & py-cdsp python way)
 ```
 SuperPlayer-GameChanger
 └── usr
@@ -95,8 +96,10 @@ SuperPlayer-GameChanger
         └── bin
             └── SuperPlayer-GameChanger
 ```
+While the .tcz's are looking for the folder and files (/home/tc/camilladsp/etc... etc..), there is ofcause a chance that something could go wrong, so please\
+backup thoose dir's if you have them.
 
-Take a backup of the pCP asound.conf :
+Also take a backup of the pCP asound.conf - Nice to have for troubleshooting :
 ```sudo cp /etc/asound.conf /home/tc/asound.conf-pCP```\
 Then delete the /etc/asound.conf ```sudo rm /etc/asound.conf``` and create a new empty one ```sudo nano /etc/asound.conf```\
 The SuperPlayer /etc/asound.conf should look like this:
@@ -114,7 +117,7 @@ type hw
 card 0
 }
 ```
-But change the card 0/device 0 to the actual hardware, if it's not right.
+**Now change the card 0/device 0 to the actual hardware**, if it's not right.
 The cards can be seen by execute ```aplay -l```
 ```
 **** List of PLAYBACK Hardware Devices ****
@@ -124,7 +127,8 @@ card 0: Amanero [Combo384 Amanero], device 0: USB Audio [USB Audio]
 ```
 
 
-```cat /opt/bootlocal.sh```
+
+```nano /opt/bootlocal.sh```
 ```
 #!/bin/sh
 # put other system startup commands here
@@ -140,7 +144,7 @@ echo "${GREEN}Running bootlocal.sh..."
 # SuperPlayer ------
 sudo SuperPlayer-GameChanger py-cdsp > /dev/null 2>&1
 #sudo SuperPlayer-GameChanger alsa-cdsp > /dev/null 2>&1
-camillagui  > /dev/null 2>&1 &   ```**<---- REMOVE if not used**```
+camillagui  > /dev/null 2>&1 &
 # SuperPlayer ------
 ```
 
