@@ -1,6 +1,9 @@
 # SuperPlayer-v8.0.0-----SamplerateChanger-v1.0.0
-**Currently under construction**
+
 **Tested on pCP 8, 32bit version**
+
+CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
+Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-based/361429-superplayer-dsp_engine-camilladsp-samplerate-switching-esp32-remote-control.html
 
 It all started a "long" time ago ;-)... (Not in a far away galaxy through)\
 I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
@@ -8,8 +11,29 @@ I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure wi
 I had created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
 The goal with this is to have CamillaDSP running along with Squeezelite and automatically change filters on CamillaDSP, when samplerate's are changing.
 
-If you like to have the CamillaDSP gui installed, giving you a nice interface, you should install my .tcz'z from here https://github.com/Lykkedk/SuperPlayer-v8.0.0--CamillaGUI-v0.6.0 also.
+If you like to have the CamillaDSP gui installed also, giving you a nice interface, you should install my .tcz'z from here https://github.com/Lykkedk/SuperPlayer-v8.0.0--CamillaGUI-v0.6.0 
 
+**Here we go ::**
+
+(Nevermind is something is repeated from my Camillagui install, if you did this first)
+
+First thing to do, is to have the pCP working with your'e soundcard/dac or whatever used; when this is done continue...
+
+Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePlayer8.0.0/piCorePlayer8.0.0.zip\
+Extend filesystem as instructed for piCorePlayer. [Main page, Resize FS]
+
+**SSH into the pCP/RPI ssh tc@192.168.1.95 (with the right ip number)**
+Default password is: piCore
+Install needed editor:
+
+```tce-load -w -i nano``` (RPI downloads and installs nano now)
+
+Nano is an easy texteditor
+Quick use : [ctrl] + o = save, [ctrl] + x = exit
+
+Install python3.8.tcz - ```tce-load -w -i python3.8.tcz```
+
+Install git & clone my repo. (You can copy & paste, one line at a time into the pCP SSH console/terminal if you like)
 ```
 tce-load -w git
 tce-load -i git
