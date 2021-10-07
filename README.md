@@ -303,6 +303,22 @@ pcm.camilladsp {
 ```
 If this also work's, you can have it load at boot, by inserting it into bootlocal & onboot.lst as i explained before.
 
+When the superplayer-alsa_cdsp-v8.0.0.tcz are loaded, it creates some new files.
+alsa_cdsp_template.yml & camilladsp.yml (please ref. to https://github.com/scripple/alsa_cdsp for good howto)
+```
+camilladsp
+         ├── alsa_cdsp_template.yml
+         ├── camilladsp.yml
+         ├── cdsp_template_active.yml
+         ├── cdsp_template.yml
+         ├── coeffs
+         ├── configs
+         └── SuperPlayer-Backups
+            └── asound.conf-BACKUP
+```
+
+Hope it all went good.... \
+**Good luck (Jesper / lykkedk over at diyaudio.com)**
 
 Some examples of use ::
 ```
@@ -325,7 +341,6 @@ SuperPlayer-Samplerate with python executed samplerate changer
 
 ```
 
-Hope it all went good.... Good luck (Jesper / lykkedk over at diyaudio.com)
 
 ![SuperPlayer-settings Logo](/Squeezelite_settings.png)
 
