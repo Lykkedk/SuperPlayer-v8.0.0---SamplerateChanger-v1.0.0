@@ -15,7 +15,7 @@ If you like to have the CamillaDSP gui installed also, giving you a nice interfa
 
 **Here we go ::**
 
-(Nevermind is something is repeated from my Camillagui install, if you did this first)
+(Nevermind if something is repeated from my Camillagui install, if you did this first)
 
 Install pCP v8 - 32bit version... https://repo.picoreplayer.org/insitu/piCorePlayer8.0.0/piCorePlayer8.0.0.zip
 
@@ -130,6 +130,7 @@ card 0: Amanero [Combo384 Amanero], device 0: USB Audio [USB Audio]
 
 Everything should be ready now to try the Python way of doing this (py-cdsp).\
 Execute ```tce-load -i superplayer-samplerate-v8.0.0.tcz```\
+And ```tce-load -i SuperPlayer-GameChanger.tcz```
 If not allready there, the .tcz should create the following directory's and files ::
 ```
 /home/tc/camilladsp
