@@ -207,6 +207,21 @@ When the python daemon are started, it generates a new file named ```cdsp_templa
 Using e.g fir filter's in the .yml - just name the filter's with this <<sample_rate>> ... Say /home/tc/myfilter/MYFIR<<sample_rate>>FOO.yml\
 Or again most like the same way when using the native alsa_cdsp. https://github.com/scripple/alsa_cdsp
 
+But just leave it as is for now...\
+Looking at the pictures at bottom of this readme, disable squeezelite at boot, and set the **Max sample rate to 44100-192000** not 441000-384000\
+as in the picture below, because my Python daemon does not support this by now.
+
+Execute ```sudo SuperPlayer-GameChanger py-cdsp``` and wait for it to start...
+```
+tc@SuperPlayer:~/camilladsp$ sudo SuperPlayer-GameChanger py-cdsp
+Starting ----> SuperPlayer-Samplerate with python executed samplerate changer
+
+```
+It should work at this stage... Try it out before continue :)
+Remember to backup the pCP with ```pcp bu```, before rebooting or powering pCP off.
+
+If everything is working as expected, you can paste the lines in bootlocal & onboot.lst to have it start at boot.\
+(Comment (#) out the ```camillagui  > /dev/null 2>&1 &``` line if not used)
 
 ```nano /opt/bootlocal.sh```
 ```
@@ -228,7 +243,7 @@ camillagui  > /dev/null 2>&1 &
 # SuperPlayer ------
 ```
 
-```cat /mnt/mmcblk0p2/tce/onboot.lst```
+```nano /mnt/mmcblk0p2/tce/onboot.lst```
 ```
 pcp.tcz
 pcp-8.0.0-www.tcz
