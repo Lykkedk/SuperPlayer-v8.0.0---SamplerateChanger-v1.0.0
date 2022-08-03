@@ -10,7 +10,7 @@ Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-base
 It all started a "long" time ago ;-)... (Not in a far away galaxy through)\
 I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
 
-(#real-cool-heading)
+#real-cool-heading
 TEST!!!
 
 I had created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
