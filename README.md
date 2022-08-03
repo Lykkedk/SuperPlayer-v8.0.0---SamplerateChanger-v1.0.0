@@ -2,14 +2,10 @@
 
 **Tested on pCP 8, 32bit version**
 
-#Real Cool Heading
-
-#real-cool-heading
-
 CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
 Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-based/361429-superplayer-dsp_engine-camilladsp-samplerate-switching-esp32-remote-control.html
 
-[Go to Real Cool Heading section]
+[Go to Real Cool Heading section](#real-cool-heading)
 
 It all started a "long" time ago ;-)... (Not in a far away galaxy through)\
 I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
