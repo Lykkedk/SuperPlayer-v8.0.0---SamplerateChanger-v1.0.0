@@ -9,11 +9,13 @@
 CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
 Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-based/361429-superplayer-dsp_engine-camilladsp-samplerate-switching-esp32-remote-control.html
 
-[Go to Real Cool Heading section](#real-cool-heading)
-TEST!!!
+[Go to Real Cool Heading section]
 
 It all started a "long" time ago ;-)... (Not in a far away galaxy through)\
 I've been using CamillaDSP for 1+year now, having had a lot of fun & pleasure with this DSP thing.
+
+(#real-cool-heading)
+TEST!!!
 
 I had created some .tcz, which are the pCP / piCore (TinyCore Linux) way of packing things up.\
 The goal with this is to have CamillaDSP running along with Squeezelite and automatically change filters on CamillaDSP, when samplerate's are changing.
