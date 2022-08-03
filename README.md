@@ -353,6 +353,6 @@ SuperPlayer-Samplerate with python executed samplerate changer
 
 
 
-#Real Cool Heading
+#real-cool-heading
 
 This is a real cool heading with some real cool content.
