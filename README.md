@@ -370,8 +370,24 @@ tce-load -w git
 tce-load -i git
 git clone https://github.com/Lykkedk/SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0.git
 cd SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
-cp camilladsp-1.0.1.tcz.tcz /mnt/mmcblk0p2/tce/optional
+cp camilladsp-1.0.1.tcz /mnt/mmcblk0p2/tce/optional
 cd ..
 rm -fr SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
 
+```
+
+Now edit the onboot.lst, to have the new CamillaDSP loaded at boot.\
+*Please ignore them other lines, just edit the one with the camilladsp-xxxx.tcz*
+
+```nano /mnt/mmcblk0p2/tce/onboot.lst```
+```
+pcp.tcz
+pcp-8.0.0-www.tcz
+nano.tcz
+python3.8.tcz
+camilladsp-1.0.1.tcz
+camillagui-v0.6.0.tcz
+superplayer-samplerate-v8.0.0.tcz
+superplayer-alsa_cdsp-v8.0.0.tcz
+SuperPlayer-GameChanger.tcz
 ```
