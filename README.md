@@ -2,7 +2,7 @@
 
 **Tested on pCP 8, 32bit version**
 
-[!NEW! - Upgrade guide](#upgrade-guide)\
+[!NEW! - Upgrade guide](#upgrade-guide) (camilladsp-1.0.1)\
 *This is ment as a future upgrade, for upgrading the CamillaDSP binary, tricks and tracks etc...*\
 *Use when you allready have a working SuperPlayer SamplerateChanger installation*
 
