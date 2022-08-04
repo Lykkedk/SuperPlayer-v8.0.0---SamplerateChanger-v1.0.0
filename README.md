@@ -6,6 +6,11 @@
 *This is ment as a future upgrade, for upgrading the CamillaDSP binary, tricks and tracks etc...*\
 *Use when you allready have a working SuperPlayer SamplerateChanger installation*
 
+This guide is ment as a guide to install a working CamillaDSP + tool's for an allready working piCorePlayer installation.\
+There seem's to be some confusion about the part SuperPlayer-GameChanger which i called one of the tool's provided along.\
+The SuperPlayer-GameChanger is just a script which are used to change the way CamillaDSP handles the automatic switching of samplerates,\
+e.g. when you are using fir filter's for say 44.1kHz, 48.0kHz, 88.2kHz, 96kHz etc...
+
 CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
 Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-based/361429-superplayer-dsp_engine-camilladsp-samplerate-switching-esp32-remote-control.html
 
