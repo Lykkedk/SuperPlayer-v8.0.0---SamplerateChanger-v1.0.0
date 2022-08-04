@@ -363,15 +363,14 @@ SuperPlayer-Samplerate with python executed samplerate changer
 
 ## Upgrade Guide
 
-I have uploaded the newest (04.08.2022) version of Camilladsp (camilladsp-1.0.1.tcz) to this repo.\
-Just gitclone again as in the guide :
+I have uploaded the newest (04.08.2022) version of CamillaDSP (camilladsp-1.0.1.tcz) to this repo.\
+Just gitclone again as in the guide and copy the new binary to correct directory :
 ```
 tce-load -w git
 tce-load -i git
 git clone https://github.com/Lykkedk/SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0.git
 cd SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
-cp *.tcz /mnt/mmcblk0p2/tce/optional
-cp *.tcz.dep /mnt/mmcblk0p2/tce/optional
+cp camilladsp-1.0.1.tcz.tcz /mnt/mmcblk0p2/tce/optional
 cd ..
 rm -fr SuperPlayer-v8.0.0---SamplerateChanger-v1.0.0
 
