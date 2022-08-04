@@ -2,8 +2,8 @@
 
 **Tested on pCP 8, 32bit version**
 
-[!NEW! - Upgrade guide](#upgrade-guide)
-*This is ment as a future upgrade, for upgrading the CamillaDSP binary, tricks and tracks etc...*
+[!NEW! - Upgrade guide](#upgrade-guide)\
+*This is ment as a future upgrade, for upgrading the CamillaDSP binary, tricks and tracks etc...*\
 *Use when you allready have a working SuperPlayer SamplerateChanger installation*
 
 CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
