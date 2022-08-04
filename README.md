@@ -2,6 +2,8 @@
 
 **Tested on pCP 8, 32bit version**
 
+[LINK](#upgrade-guide-1)
+
 CamillaDSP here :: https://www.diyaudio.com/forums/pc-based/349818-camilladsp-cross-platform-iir-fir-engine-crossovers-correction-etc.html
 Thread and help to my .tcz stuff here :: https://www.diyaudio.com/forums/pc-based/361429-superplayer-dsp_engine-camilladsp-samplerate-switching-esp32-remote-control.html
 
@@ -349,3 +351,8 @@ SuperPlayer-Samplerate with python executed samplerate changer
 
 ![SuperPlayer-tweaks Logo](/Squeezelite_tweaks.png)
 
+
+
+## Upgrade Guide 1
+
+Let's see!
