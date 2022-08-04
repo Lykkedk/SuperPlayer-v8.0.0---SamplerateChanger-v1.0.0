@@ -400,5 +400,4 @@ Checkout the newest version by executing after logging in via SSH :
 tc@SuperPlayer:~$ camilladsp --version
 CamillaDSP 1.0.1
 ```
-
-
+### That's all for now... Enjoy ;-)
