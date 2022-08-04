@@ -391,3 +391,14 @@ superplayer-samplerate-v8.0.0.tcz
 superplayer-alsa_cdsp-v8.0.0.tcz
 SuperPlayer-GameChanger.tcz
 ```
+
+When done, execute ```pcp bu``` & then reboot the Pi-machine\
+Everything should hopefully work.\
+Checkout the newest version by executing after logging in via SSH :
+
+```
+tc@SuperPlayer:~$ camilladsp --version
+CamillaDSP 1.0.1
+```
+
+
